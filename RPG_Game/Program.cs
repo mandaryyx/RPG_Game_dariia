@@ -3,41 +3,22 @@
     public interface IEquippable
     {
         string Name { get; }
-        void Equip();
-        void Unequip();
+        void Equip(Player player);
+        void Unequip(Player player);
+    }
+
+    public interface ISpellCaster
+    {
+        int Mana { get; }
+        void CastSpell(Character target);
+        void RestoreMana(int amount);
     }
     public class Player
     {
 
     }
 
-    public abstract class Enemy : Character
-    {
-        private int _experienceReward;
-        private List<Item> _loot;
 
-        public int ExperienceReward
-        {
-            get => _experienceReward;
-            protected set => _experienceReward = value;                                                                             
-        }
-
-        protected Enemy(string name, int health, int strength, int experienceReward) : base(name, health, strength)
-        {
-            _experienceReward = experienceReward;
-            _loot = new List<Item>(); 
-        }
-
-        protected void AddLoot(Item item)
-        {
-            _loot.Add(item);
-        }
-
-        public List<Item> GetLoot()
-        {
-            return new List<Item>(_loot);
-        }
-    }
 
     internal class Program
     {
