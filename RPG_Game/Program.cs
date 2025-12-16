@@ -3,6 +3,13 @@ using System.Xml.Linq;
 
 namespace RPG_Game
 {
+    public class WoodenSword : Weapon
+    {
+        public WoodenSword() : base("Дерев'яний меч", "+5 до атаки", 5)
+        {
+        }
+    }
+
     public class Weapon : Item, IEquippable
     {
         public int Damage { get; protected set; } 
