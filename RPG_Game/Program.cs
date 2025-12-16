@@ -3,19 +3,18 @@ using System.Xml.Linq;
 
 namespace RPG_Game
 {
-
-    public class HealthPotion : Item
+    public class Depression : Enemy
     {
-        private int _healAmount;
-        public HealthPotion() : base("Зілля здоров'я", "Відновлює 40 HP")
+        public Depression() : base("Депресія", 4, 3, 30)
         {
-            _healAmount = 40;
+            AddLoot(new HealthPotion());
         }
 
-        public override void Use(Player player)
+        public override void Attack(Character target)
         {
-            Console.WriteLine($"{player.Name} використовує {Name}");
-            player.Heal(_healAmount);
+            var damage = Strength;
+            Console.WriteLine($"{Name} б'є кинджалом і завдає {damage}");
+            target.TakeDamage(damage);
         }
     }
 
