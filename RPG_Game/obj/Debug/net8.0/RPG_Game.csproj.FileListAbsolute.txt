@@ -1,0 +1,5 @@
+C:\git\RPG_Game_dariia\RPG_Game\obj\Debug\net8.0\RPG_Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\RPG_Game_dariia\RPG_Game\obj\Debug\net8.0\RPG_Game.AssemblyInfoInputs.cache
+C:\git\RPG_Game_dariia\RPG_Game\obj\Debug\net8.0\RPG_Game.AssemblyInfo.cs
+C:\git\RPG_Game_dariia\RPG_Game\obj\Debug\net8.0\RPG_Game.csproj.CoreCompileInputs.cache
+C:\git\RPG_Game_dariia\RPG_Game\obj\Debug\net8.0\RPG_Game.sourcelink.json
